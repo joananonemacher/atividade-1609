@@ -16,7 +16,6 @@ class aluno extends pessoa{
 public function matricularemturma($turma){
     $this->turmaatual = $turma;
 }
-
 public function adicionarnota($valornota){
     if ($this->nota1 === null){
         $this->nota1 = $valornota;
@@ -28,16 +27,13 @@ public function adicionarnota($valornota){
             $this->nota3 = $valornota;
 }
     }
-
 public function calcularmedia(){
     $this->mediafinal = ($this->nota1 + $this->nota2 + $this->nota3) / 3;
         return $this->mediafinal;
 }
-
 public function alterarsituacao($novasituacao){
     $this->situacao = $novasituacao;
 }
-
 public function trocarturma($novaturma){
     $this->turmaatual = $novaturma;
 }

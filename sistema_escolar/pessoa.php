@@ -20,7 +20,7 @@ public function cadastrarpessoa($nome, $idade, $cpf){
 }
 
 public function atualizaremail($novoemail){
-    $this->email = $novoEmail;
+    $this->email = $novoemail;
 }
 
 public function atualizartelefone($novotelefone){
